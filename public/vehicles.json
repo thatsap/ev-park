@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/icon.png",
+    "range": "300 km",
+    "charging": "Fast",
+    "costPerKm": "$0.05",
+    "seating": "4",
+    "bluetooth": true,
+    "phoneCharging": true
+  },
+  {
+    "image": "/images.png",
+    "range": "250 km",
+    "charging": "Standard",
+    "costPerKm": "$0.06",
+    "seating": "5",
+    "bluetooth": false,
+    "phoneCharging": true
+  }
+]

@@ -1,0 +1,25 @@
+[
+  { "icon": "fas fa-bolt", "label": "Charging", "status": "Active" },
+  { "icon": "fas fa-chart-line", "label": "Progress", "status": "75%" },
+  {
+    "icon": "fas fa-exclamation-triangle",
+    "label": "Hazard Control",
+    "status": "No Hazard"
+  },
+  { "icon": "fas fa-tire", "label": "Tire Pressure", "status": "Normal" },
+  { "icon": "fas fa-gavel", "label": "Penalty", "status": "None" },
+  {
+    "icon": "fas fa-wrench",
+    "label": "Needs Service?",
+    "status": "No Service Needed"
+  },
+  {
+    "icon": "fas fa-phone",
+    "label": "Inform Service Centers",
+    "status": "Online"
+  },
+  { "icon": "fas fa-parking", "label": "Parking API", "status": "Full" },
+  { "icon": "fas fa-map", "label": "Map API", "status": "Updated" },
+  { "icon": "fas fa-user", "label": "Login/Signup", "status": "Guest" },
+  { "icon": "fas fa-credit-card", "label": "Payment API", "status": "Ready" }
+]

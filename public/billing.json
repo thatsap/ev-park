@@ -1,0 +1,9 @@
+{
+  "basicFare": "50.00",
+  "surgeCharge": "10.00",
+  "penaltyCharge": "5.00",
+  "subTotal": "65.00",
+  "gstAmount": "11.70",
+  "finalFare": "76.70",
+  "currency": "INR"
+}

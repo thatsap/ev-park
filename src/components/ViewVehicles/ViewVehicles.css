@@ -1,0 +1,142 @@
+/* Main container for ViewVehicles */
+.vehicle-display {
+  font-family: 'Roboto', Arial, sans-serif;
+  width: 350px; /* Fixed width for the popup */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Image section: contains the arrows and vehicle image */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%; /* Takes the full width of the parent (350px) */
+  height: 200px; /* Fixed height for the image section */
+  box-sizing: border-box;
+}
+
+/* Navigation arrows */
+.arrow {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0; /* Prevent arrows from shrinking */
+}
+
+/* Hover effect for arrows */
+.arrow:hover {
+  background-color: #d0d0d0;
+  transform: scale(1.1);
+}
+
+/* Disabled state for arrows */
+.arrow:disabled {
+  color: #aaa;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Focus state for accessibility */
+.arrow:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Vehicle image */
+.vehicle-image {
+  width: calc(100% - 76px); /* Full width minus the space for arrows (30px each + 8px padding on each side) */
+  height: 100%; /* Fill the height of the image-section */
+  max-width: 100%; /* Prevent overflow */
+  max-height: 100%; /* Prevent overflow */
+  object-fit: contain; /* Scale image proportionally to fit within the container */
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+
+/* Features section */
+.features-section {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Features section heading */
+.features-section h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Features list */
+.features-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual feature items */
+.features-section li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add a small icon before each feature */
+.features-section li::before {
+  content: '✔';
+  color: #28a745;
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .vehicle-display {
+    width: 300px; /* Slightly smaller on mobile */
+    padding: 10px;
+  }
+
+  .image-section {
+    height: 180px; /* Slightly smaller height on mobile */
+  }
+
+  .vehicle-image {
+    width: calc(100% - 72px); /* Adjust for smaller arrows and padding on mobile */
+  }
+
+  .arrow {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .features-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .features-section li {
+    font-size: 0.85rem;
+  }
+}

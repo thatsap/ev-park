@@ -1,0 +1,7 @@
+[
+  { "name": "Charging", "value": "Active" },
+  { "name": "Progress", "value": "75%" },
+  { "name": "Map", "value": "Online" },
+  { "name": "Parking", "value": "Available" },
+  { "name": "Login/Signup", "value": "Guest" }
+]

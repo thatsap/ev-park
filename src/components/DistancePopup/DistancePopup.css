@@ -1,0 +1,137 @@
+/* src/components/DistancePopup.css */
+/* Overlay to darken background */
+.distance-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Main container for DistancePopup */
+  .distance-popup {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.1);
+  }
+  
+  .close-button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* Header section */
+  .distance-header {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .distance-header h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  /* Form styling */
+  .distance-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .distance-form label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .distance-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .distance-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .distance-popup {
+      width: 260px;
+      padding: 10px;
+    }
+  
+    .distance-header h2 {
+      font-size: 1.1rem;
+    }
+  
+    .distance-form input,
+    .submit-button {
+      font-size: 0.85rem;
+}
+}
